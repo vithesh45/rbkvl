@@ -8,10 +8,12 @@ import "./styles/navbar.css";
 import "./styles/pages.css";
 import "./styles/home.css";
 import "./styles/responsive.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
+    <ScrollToTop/>
       <App />
     </BrowserRouter>
   </React.StrictMode>
