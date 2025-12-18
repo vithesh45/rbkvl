@@ -8,8 +8,8 @@ export default function Hero() {
         {/* Left content */}
         <div className="hero-content">
           <h1 className="hero-title animate-slide-up">
-            Fresh & Pure Milk <br />
-            From Farmers to Families
+            Fresh  & Truly Pure. <br />
+            A Taste of Countryside.
           </h1>
 
           <p className="hero-subtitle animate-slide-up delay-1">

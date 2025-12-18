@@ -84,7 +84,7 @@ export default function AllProducts() {
           className="products-video"
         >
           <source
-            src="public/assets/our-product.mp4"
+            src="/assets/our-product.mp4"
             type="video/mp4"
           />
         </video>
