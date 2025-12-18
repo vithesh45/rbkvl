@@ -1,3 +1,54 @@
+
+/* ================= TOP BANNER ================= */
+
+
+.top-banner {
+  display: block; /* Ensure it's not hidden by a parent's flex/grid settings */
+  width: 100%;
+  min-height: 900px; 
+  height: 95vh;
+  max-height: 520px;
+  overflow: hidden;
+  /* background-color: #333;  */
+}
+
+
+.top-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.top-banner .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-slide-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-slide-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000205 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important;
+  transform: scale(0.5); /* Smaller arrows */
+}
+
 /* ================= HERO ================= */
 
 .hero {
