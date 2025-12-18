@@ -42,7 +42,7 @@ export default function AppRouter() {
       {/* HOME */}
       <Route path="/" element={<Home />} />
 
-      {/* ABOUT (MYMUL STRUCTURE) */}
+      {/* ABOUT (RBKVL STRUCTURE) */}
       <Route path="/about/company-profile" element={<CompanyProfile />} />
       <Route path="/about/mission-vision" element={<MissionVision />} />
       <Route path="/about/board" element={<Board />} />

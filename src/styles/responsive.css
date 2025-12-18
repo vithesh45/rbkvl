@@ -1,10 +1,11 @@
 /* top-banner */
-@media (max-width: 600px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    transform: scale(0.5);
+/* @media (max-width: 768px) {
+  .products-preview .product-card img {
+    max-height: 240px;
   }
 }
+ */
+
 
 @media (max-width: 768px) {
   .footer-container {

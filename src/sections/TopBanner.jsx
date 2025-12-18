@@ -1,44 +1,36 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function TopBanner() {
   const bannerImages = [
-    "/images/temple.jpeg", 
-    "/images/temple-2.jpg",
-    
-    
+    "/images/statue.jpeg",
+    "/images/kanaka-durgamma.jpeg",
   ];
 
   return (
-    <section className="top-banner">
-      <Swiper
-        spaceBetween={0}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        loop={true} // This makes it infinite
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        {bannerImages.map((src, index) => (
-          <SwiperSlide key={index}>
-            <div className="banner-slide-wrapper">
-              <img src={src} alt={`Banner ${index + 1}`} />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <section className="hero-banner-section">
+      <div className="hero-banner-wrapper">
+        <Swiper
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="hero-swiper"
+        >
+          {bannerImages.map((src, index) => (
+            <SwiperSlide key={index}>
+              <div className="hero-slide-content">
+                <img src={src} alt={`Banner ${index + 1}`} className="hero-image" />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 }
