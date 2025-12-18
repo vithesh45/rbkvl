@@ -12,10 +12,14 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <div className="navbar-logo">
-          <NavLink to="/" onClick={closeMenu}>rbkvl</NavLink>
-        </div>
+  
 
+        <div className="navbar-logo">
+          <NavLink to="/" onClick={closeMenu}>RBKVMUL</NavLink>
+          
+        </div>
+      <img style={{height:"60px", borderRadius:"5px"}} src="/images/puneet-rajumumar-nandini.jpeg" alt="logo" srcset="" />
+        <img style={{height:"53px", borderRadius:"5px"}} src="/images/logo.png" alt="logo" srcset="" />
         {/* Hamburger Icon for Mobile */}
         <div className={`hamburger ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
           <span className="bar"></span>
