@@ -8,7 +8,9 @@ import "swiper/css/pagination";
 export default function TopBanner() {
   const bannerImages = [
     "/images/statue.jpeg",
-    "/images/kanaka-durgamma.jpeg",
+    "/images/kanaka-d1.png",
+    // "/images/kanaka-d2.png",
+
   ];
 
   return (

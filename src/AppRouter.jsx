@@ -1,9 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
-/* ================= ABOUT ================= */
-
-// Rename AboutOverview.jsx → CompanyProfile.jsx
+/* ABOUT */
 import CompanyProfile from "./pages/About/CompanyProfile";
 import MissionVision from "./pages/About/MissionVision";
 import Board from "./pages/About/Board";
@@ -14,24 +12,25 @@ import QualityPolicies from "./pages/About/QualityPolicies";
 import Milestones from "./pages/About/Milestones";
 import Activities from "./pages/About/Activities";
 
-/* ================= PRODUCTS ================= */
-
+/* PRODUCTS */
 import AllProducts from "./pages/Products/AllProducts";
-import Milk from "./pages/Products/Milk";
-import Curd from "./pages/Products/Curd";
-import Ghee from "./pages/Products/Ghee";
-import Butter from "./pages/Products/Butter";
-import Paneer from "./pages/Products/Paneer";
 
-/* ================= OTHER ================= */
+import RBKVMUL from "./pages/Products/RBKVMUL/RBKVMUL";
+import Milk from "./pages/Products/RBKVMUL/Milk";
+import Curd from "./pages/Products/RBKVMUL/Curd";
 
+import KMF from "./pages/Products/KMF/KMF";
+import Ghee from "./pages/Products/KMF/Ghee";
+import Butter from "./pages/Products/KMF/Butter";
+import Paneer from "./pages/Products/KMF/Paneer";
+
+/* OTHER */
 import Units from "./pages/Units";
 import News from "./pages/News";
 import Notifications from "./pages/Notifications";
 import Contact from "./pages/Contact";
 
-/* ================= LEGAL ================= */
-
+/* LEGAL */
 import Privacy from "./pages/Legal/Privacy";
 import Terms from "./pages/Legal/Terms";
 import Refund from "./pages/Legal/Refund";
@@ -39,10 +38,9 @@ import Refund from "./pages/Legal/Refund";
 export default function AppRouter() {
   return (
     <Routes>
-      {/* HOME */}
       <Route path="/" element={<Home />} />
 
-      {/* ABOUT (RBKVL STRUCTURE) */}
+      {/* ABOUT */}
       <Route path="/about/company-profile" element={<CompanyProfile />} />
       <Route path="/about/mission-vision" element={<MissionVision />} />
       <Route path="/about/board" element={<Board />} />
@@ -55,11 +53,15 @@ export default function AppRouter() {
 
       {/* PRODUCTS */}
       <Route path="/products" element={<AllProducts />} />
-      <Route path="/products/milk" element={<Milk />} />
-      <Route path="/products/curd" element={<Curd />} />
-      <Route path="/products/ghee" element={<Ghee />} />
-      <Route path="/products/butter" element={<Butter />} />
-      <Route path="/products/paneer" element={<Paneer />} />
+
+      <Route path="/products/rbkvmul" element={<RBKVMUL />} />
+      <Route path="/products/rbkvmul/milk" element={<Milk />} />
+      <Route path="/products/rbkvmul/curd" element={<Curd />} />
+
+      <Route path="/products/kmf" element={<KMF />} />
+      <Route path="/products/kmf/ghee" element={<Ghee />} />
+      <Route path="/products/kmf/butter" element={<Butter />} />
+      <Route path="/products/kmf/paneer" element={<Paneer />} />
 
       {/* OTHER */}
       <Route path="/units" element={<Units />} />

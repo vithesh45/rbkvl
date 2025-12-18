@@ -1,4 +1,4 @@
-import "../../styles/pages.css";
+import "../../../styles/home.css";
 
 /* ================== PRODUCT DATA ================== */
 /*
